@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Acceso Corporativo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Segoe UI, Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      width: 360px;
+    }
+    .logo {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      color: #2c5282;
+      margin-bottom: 8px;
+    }
+    .sub {
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 28px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 6px;
+      margin-top: 16px;
+    }
+    input {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    input:focus { outline: none; border-color: #2c5282; }
+    button {
+      width: 100%;
+      margin-top: 24px;
+      padding: 12px;
+      background: #2c5282;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #1e3a5f; }
+    .foot {
+      text-align: center;
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">Portal Corporativo</div>
+    <div class="sub">Inicia sesión para continuar</div>
+    <form onsubmit="return false;">
+      <label for="user">Usuario corporativo</label>
+      <input type="text" id="user" name="user" placeholder="usuario@empresa.com" autocomplete="off">
+      <label for="pass">Contraseña</label>
+      <input type="password" id="pass" name="pass" placeholder="••••••••" autocomplete="off">
+      <button type="submit">Acceder</button>
+    </form>
+    <div class="foot">Entorno de prueba · Validación RBI</div>
+  </div>
+</body>
+</html>
